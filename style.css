@@ -1,0 +1,106 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: none;
+}
+.container{
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+    font-size: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.left, .right{
+    border: 2px solid gray;
+    padding: 10px;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#button{
+    transition: all 50ms ease;
+    cursor: pointer;
+    box-shadow: 0px 3px 4px 3px rgb(167, 167, 167);
+}
+#button:hover{
+    opacity: 0.8;
+}
+.button{
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    transition: box-shadow 0.4s ease;
+}
+.button:hover{
+    opacity: 0.95;
+    box-shadow: 0px 3px 4px 3px rgb(167, 167, 167);
+}
+.left .height, .width, .font-size, .border-size, .border-radius{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+label{
+    font-weight: 600;
+}
+small{
+    color: tomato;
+}
+.lighter{
+    font-weight: lighter;
+}
+.normal{
+    font-weight: normal;
+    text-transform: none !important;
+    font-variant: normal !important;
+    font-style: normal !important;
+}
+.bold{
+    font-weight: bold;
+}
+.bolder{
+    font-weight: bolder;
+}
+.italic{
+    font-style: italic;
+}
+.oblique{
+    font-style: oblique;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.lowercase{
+    text-transform: lowercase;
+}
+.small-caps{
+    font-variant: small-caps;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .left{
+        height: 80vh;
+        width: auto;
+    }
+    .right{
+        height: 50vh;
+    }
+}

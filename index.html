@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Button Generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="height">
+                <label for="">Height: <small></small> px</label>
+            <input type="range" name="height" id="height" min="4" max="100" value="57">
+            </div>
+            <div class="width">
+                <label for="">Width: <small></small> px</label>
+                <input type="range" name="width" id="width" min="4" max="200" value="153">
+            </div>
+            <div class="font-size">
+                <label for="">Font Size: <small></small> px</label>
+                <input type="range" name="font-size" id="font-size" min="8" max="40" value="23">
+            </div>
+            <div class="border-size">
+                <label for="">Border Size: <small></small> px</label>
+            <input type="range" name="border-size" id="border-size" min="0" max="50" value="0">
+            </div>
+            <div class="border-radius">
+                <label for="">Border Radius: <small></small> px</label>
+                <input type="range" name="border-radius" id="border-radius" min="0" max="100" value="8">
+            </div>
+            <div class="bg-color">
+                <label for="">Background Color: <small></small></label>
+                <input type="color" name="bg-color" id="bg-color" value="#e8e8e8">
+            </div>
+            <div class="border-color">
+                <label for="">Border Color: <small></small></label>
+                <input type="color" name="border-color" id="border-color" value="#000000">
+            </div>
+            <div class="text-color">
+                <label for="">Text Color: <small></small></label>
+                <input type="color" name="text-color" id="text-color" value="#000000">
+            </div>
+            <div class="border-type">
+                <label for="">Border Type: </label>
+                <select name="border-type" id="border-type">
+                    <option class="border-options"value="none" selected>None</option>
+                    <option class="border-options"value="solid">Solid</option>
+                    <option class="border-options"value="hidden">Hidden</option>
+                    <option class="border-options"value="dotted">Dotted</option>
+                    <option class="border-options"value="dashed">Dashed</option>
+                    <option class="border-options"value="double">Double</option>
+                    <option class="border-options"value="groove">Groove</option>
+                    <option class="border-options"value="ridge">Ridge</option>
+                    <option class="border-options"value="inset">Inset</option>
+                    <option class="border-options"value="outset">Outset</option>
+                </select>
+            </div>
+            <div class="font-style">
+                <label for="">Font Style: </label>
+                <button class="button lighter">Lighter</button>
+                <button class="button normal">Normal</button>
+                <button class="button bold">Bold</button>
+                <button class="button bolder">Bolder</button>
+                <button class="button italic">Italic</button>
+                <button class="button oblique">Oblique</button>
+                <button class="button capitalize">Capitalize</button>
+                <button class="button uppercase">Uppercase</button>
+                <button class="button lowercase">Lowercase</button>
+                <button class="button small-caps">Small Caps</button>
+            </div>
+
+
+
+
+        </div>
+        <div class="right">
+            <button id="button">Button</button>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
